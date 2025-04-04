@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apricot Genie</title>
+
+  <!-- Google Font: Rubik -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Genie image will change based on game stage -->
+    <img id="genie" src="assets/images/pose-1-calm.png" alt="Apricot Genie" />
+
+    <!-- Genie speech bubble -->
+    <div class="text-box">
+      <p id="genie-text">ברוכה הבאה! תבחרי דמות בראש... אני אנחש מי זו 😎</p>
+    </div>
+
+    <!-- Button to switch between genie expressions -->
+    <button onclick="nextExpression()">הבא</button>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="script/main.js"></script>
+</body>
+</html>
