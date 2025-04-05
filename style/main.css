@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: #FCF4E7;
+    font-family: 'Rubik', sans-serif;
+    direction: rtl;
+  }
+  
+  .main-wrapper {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-bottom: 40px;
+  }
+  
+  .genie-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .genie-img {
+    max-width: 300px;
+  }
+  
+  .speech-bubble {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .cta-btn {
+    margin-top: 20px;
+    background-color: #B8E986;
+    color: black;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #A3DB72;
+  }
+  

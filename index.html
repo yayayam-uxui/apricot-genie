@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apricot Genie</title>
-
-  <!-- Google Font: Rubik -->
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="style/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Genie image will change based on game stage -->
-    <img id="genie" src="assets/images/pose-1-calm.png" alt="Apricot Genie" />
+  <div class="main-wrapper">
+    <img src="assets/images/logo.svg" alt="Apricot Labs logo" class="logo">
 
-    <!-- Genie speech bubble -->
-    <div class="text-box">
-      <p id="genie-text">ברוכה הבאה! תבחרי דמות בראש... אני אנחש מי זו 😎</p>
+    <div class="genie-section">
+      <img id="genie" src="assets/images/pose-1-calm.png" alt="April Cot" class="genie-img">
+      
+      <div class="speech-bubble">
+        <p><strong>ברוכים הבאים לאיזור שלי,</strong><br>
+        אני <strong>April Cot</strong> – ואני יודעת לנחש כל דמות,<br>רוצים לנסות אותי?</p>
+        <button class="cta-btn">LET’S GO!!!!!!!</button>
+      </div>
     </div>
-
-    <!-- Button to switch between genie expressions -->
-    <button onclick="nextExpression()">הבא</button>
   </div>
 
-  <!-- Main JavaScript -->
   <script src="script/main.js"></script>
 </body>
 </html>
