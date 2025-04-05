@@ -1,23 +1,35 @@
-<!-- מסך פתיחה -->
-<div id="screen-intro" class="screen active container">
-    <img src="assets/images/logo.png" class="logo" alt="Apricot logo" />
-  
-    <div class="content">
-      <img src="assets/images/pose-1-calm.png" class="character" alt="דמות אפריל" />
-  
-      <div class="text-block">
-        <div class="speech-bubble">
-          <p class="bubble-text">
-            <strong>ברוכים הבאים לאיזור שלי,</strong><br>
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apricot Genie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+
+  <!-- מסך פתיחה -->
+  <div id="screen-intro" class="screen active">
+    <img src="assets/images/logo.png" class="logo" alt="Apricot Labs logo" />
+    
+    <div class="intro-container">
+      <img src="assets/images/pose-1-calm.png" class="character" alt="April Cot" />
+      
+      <div class="bubble-wrapper">
+        <img src="assets/images/Union.png" class="bubble-bg" alt="bubble" />
+        <div class="bubble-text">
+          <p><strong>ברוכים הבאים לאיזור שלי,</strong><br>
             אני <strong>April Cot</strong> – ואני יודעת לנחש כל דמות,<br>
             רוצים לנסות אותי?
           </p>
-        </div>
-  
-        <div class="button-wrapper">
-          <button class="start-button" onclick="startGame()">LET’S GO!!!!!!!</button>
+          <button class="cta-btn" onclick="startGame()">LET’S GO!!!!!!!</button>
         </div>
       </div>
     </div>
+
   </div>
-  
+
+  <script src="script/main.js"></script>
+</body>
+</html>
