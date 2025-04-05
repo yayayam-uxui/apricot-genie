@@ -1,0 +1,117 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #fbf1e2;
+  direction: rtl;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: static; /* שינוי זמני */
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 0; /* הצמדה לקצה העליון */
+  left: 0; /* הצמדה לקצה השמאלי */
+  width: 150px;
+  z-index: 10;
+  margin: 40px; /* הוספת מרווח מהפינות */
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.character {
+  width: 350px;
+}
+
+.bubble-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speech-bubble {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  max-width: 550px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ffffff;
+  transform: translateY(-50%);
+}
+
+button.cta-btn {
+  background-color: #94CE81;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 60px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto;
+  margin-top: 20px;
+}
+
+button.cta-btn:hover {
+  opacity: 0.8;
+}
+
+.speech-bubble {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  max-width: 550px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  display: flex; /* הפוך את הבועה לקונטיינר Flex */
+  justify-content: center; /* מרכז אופקית */
+  align-items: center; /* מרכז אנכית */
+  text-align: center; /* מרכז טקסט בתוך האלמנטים */
+}
+
+.speech-bubble p {
+  margin: 5px 0;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ffffff;
+  transform: translateY(-50%);
+}
