@@ -8,26 +8,24 @@
   <link rel="stylesheet" href="style/main.css" />
 </head>
 <body>
+  <div id="screen-intro" class="screen">
+    <header>
+      <img src="assets/images/logo.png" alt="Apricot Labs logo" class="logo" />
+    </header>
 
-  <!-- מסך פתיחה -->
-  <div id="screen-intro" class="screen active">
-    <img src="assets/images/logo.png" class="logo" alt="Apricot Labs logo" />
-    
-    <div class="intro-container">
-      <img src="assets/images/pose-1-calm.png" class="character" alt="April Cot" />
-      
-      <div class="bubble-wrapper">
-        <img src="assets/images/Union.png" class="bubble-bg" alt="bubble" />
-        <div class="bubble-text">
+    <div class="content-wrapper">
+      <img src="assets/images/pose-1-calm.png" alt="April Cot" class="character" />
+
+      <div class="speech-wrapper">
+        <img src="assets/images/Union.png" alt="bubble background" class="bubble-bg" />
+        <div class="speech-text">
           <p><strong>ברוכים הבאים לאיזור שלי,</strong><br>
-            אני <strong>April Cot</strong> – ואני יודעת לנחש כל דמות,<br>
-            רוצים לנסות אותי?
-          </p>
-          <button class="cta-btn" onclick="startGame()">LET’S GO!!!!!!!</button>
+          אני <strong>April Cot</strong> – ואני יודעת לנחש כל דמות,<br>
+          רוצים לנסות אותי?</p>
         </div>
+        <button class="cta-btn" onclick="startGame()">LET’S GO!!!!!!!</button>
       </div>
     </div>
-
   </div>
 
   <script src="script/main.js"></script>

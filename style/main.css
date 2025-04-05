@@ -1,78 +1,72 @@
+/* בסיס */
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Rubik', sans-serif;
+    margin: 0;
     background-color: #FCF4E7;
     direction: rtl;
   }
   
   .screen {
-    width: 100%;
-    height: 100vh;
-    display: none;
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 50px;
-    box-sizing: border-box;
+    padding: 2rem;
   }
   
-  .screen.active {
+  /* לוגו */
+  header .logo {
+    width: 140px;
+    margin-bottom: 1rem;
+  }
+  
+  /* תוכן מסך פתיחה */
+  .content-wrapper {
+    flex: 1;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
   
-  .logo {
-    width: 130px;
-    margin-bottom: 20px;
-  }
-  
-  .intro-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-    margin-top: 30px;
-  }
-  
+  /* דמות */
   .character {
-    width: 300px;
-    height: auto;
+    width: 280px;
+    max-width: 100%;
   }
   
-  .bubble-wrapper {
+  /* בועה */
+  .speech-wrapper {
     position: relative;
-    width: 623px;
-    height: 228px;
+    max-width: 500px;
+    text-align: center;
   }
   
   .bubble-bg {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   
-  .bubble-text {
+  .speech-text {
     position: absolute;
-    top: 40px;
-    right: 40px;
-    left: 40px;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .bubble-text p {
-    margin: 0 0 20px;
-    font-size: 18px;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     color: #000;
+    font-size: 1rem;
+    line-height: 1.6;
   }
   
+  /* כפתור */
   .cta-btn {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
     background-color: #94CE81;
     border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
     cursor: pointer;
-    align-self: flex-start;
   }
   
